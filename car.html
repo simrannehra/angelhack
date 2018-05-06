@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+
+
+  <style type="text/css">
+
+
+   body{
+   	background-image:url("d.jpg");
+   	height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+  	nav ul {
+  list-style: none;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+
+     nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #000;
+}
+ nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: blue;
+  background: #000;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background-color:black;
+}
+
+#a{
+	background-color: #333333;
+	height: 54px
+}
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+   <div class="row" id="a" style="padding-right: 30px; padding-top: 10px">
+       	<nav class="stroke" style="text-align: right; font-family: arial"   >
+          <li><a href="#" class="nav-link" style="font-size: 25px;color: #e5e5e5" >Sign Up</a></li>
+         
+       </nav>
+   </div>
+<br>
+<br>
+ <div class="row">
+ 	<div class="col-sm-2"></div>
+
+	<div class="col-sm-7">
+		<div class="well" style="margin-top: 20px;margin-left: 80px">
+		<div style="font-size: 40px">Add car</div>
+		<form>
+			<br>
+			   <label for="text">Car Model:</label>
+			 <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-car"></i></span>
+               <input id="usr" type="text" class="form-control" name="email">
+             </div>
+             <br>
+               <label for="text">Car Type:</label>
+			 <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-car"></i></span>
+               <input id="usr" type="text" class="form-control" name="email">
+             </div>
+             <br>
+               <label for="email">Fuel:</label>
+           
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>CNG</option>
+      </select>
+             
+              
+               <label for="email">Phone Number:</label>
+             <div class="input-group">
+               <span class="input-group-addon">+91</span>
+               <input id="password" type="text" class="form-control" name="email" >
+             </div>
+             <br>
+             
+           
+              
+             
+         <a href="#" class="btn btn-primary" role="button">Add</a>
+         <br>
+         <br>
+    
+  </form>
+</div>
+  </div>
+ </div>
+
+
+
+
+</div>
+</body>
+</html>
